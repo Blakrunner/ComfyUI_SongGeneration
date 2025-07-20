@@ -1,3 +1,104 @@
+English 
+...
+
+🎵 SongGeneration Node for ComfyUI – Quick Overview
+
+Purpose:
+– Integrates Tencent’s SongGeneration model (LeVo) into ComfyUI.
+– Enables high-quality text-to-music/song generation on setups with ≥12 GB VRAM.
+
+
+---
+
+✅ Setup Environment
+
+Tested successfully on Windows 11, with:
+
+Python 3.11
+
+torch 2.6
+
+CUDA 12.4
+
+Minimum 12 GB VRAM
+
+
+Bugfixes included:
+
+22 June: fixed config loading
+
+23 June: resolved inference reuse & omegaconf duplicate issues
+
+
+
+
+---
+
+🛠 Installation
+
+Inside ComfyUI/custom_nodes/ run:
+
+git clone https://github.com/smthemex/ComfyUI_SongGeneration.git
+
+
+---
+
+⚙️ Dependencies
+
+Use pip install -r requirements.txt
+
+Windows tip: For fairseq, install the wheel by liyaodev/fairseq (v0.12.3.1) if standard install fails.
+
+If any requirements fail, check requirements_origin.txt for exact module details.
+
+
+
+---
+
+📂 Model Files Structure
+
+Under ComfyUI/models/SongGeneration/ there should be:
+
+--  ComfyUI/models/SongGeneration/
+    |-- htdemucs.pth                    # 150 MB
+    |-- ckpt/                           # Entire folder is approximately 24.4 GB
+        |-- encode-s12k.pt             # 3.68 GB
+        |-- prompt.pt                  # 3 MB
+        |-- model_1rvq/  
+            |-- all model files
+        |-- model_septoken/
+            |-- all model files
+        |-- models--lengyue233--content-vec-best/
+            |-- all model files
+        |-- songgeneration_base/       # Note: the "_zh" has been removed from the folder name
+            |-- all model files
+        |-- vae/
+            |-- all model files
+
+
+
+
+All model files must follow the exact structure.
+
+
+---
+
+🧪 Examples & Citation
+
+Example workflow available in example_workflows/
+
+Official citation:
+
+
+@article{lei2025levo,
+  title={LeVo: High‑Quality Song Generation with Multi‑Preference Alignment},
+  author={Lei, Shun …},
+  journal={arXiv preprint arXiv:2506.07520},
+  year={2025}
+}
+
+...
+
 # ComfyUI_SongGeneration
  [SongGeneration](https://github.com/tencent-ailab/SongGeneration):High-Quality Song Generation with Multi-Preference Alignment (SOTA),you can try VRAM>12G
 
@@ -56,6 +157,6 @@ pip install -r requirements.txt
   year={2025}
 }
 ```
-
+...
 
 
