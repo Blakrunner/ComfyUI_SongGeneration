@@ -1,7 +1,7 @@
 English 
 ...
 
-🎵 SongGeneration Node for ComfyUI – Quick Overview
+# 🎵 SongGeneration Node for ComfyUI – Quick Overview
 
 Purpose:
 – Integrates Tencent’s SongGeneration model (LeVo) into ComfyUI.
@@ -9,8 +9,8 @@ Purpose:
 
 
 ---
-
-✅ Setup Environment
+# Tips:
+ ✅ Setup Environment
 
 Tested successfully on Windows 11, with:
 
@@ -34,7 +34,7 @@ Bugfixes included:
 
 ---
 
-🛠 Installation
+# 🛠 Installation
 
 Inside ComfyUI/custom_nodes/ run:
 
@@ -43,7 +43,7 @@ git clone https://github.com/smthemex/ComfyUI_SongGeneration.git
 
 ---
 
-⚙️ Dependencies
+# ⚙️ Dependencies
 
 Use pip install -r requirements.txt
 
@@ -55,7 +55,7 @@ If any requirements fail, check requirements_origin.txt for exact module details
 
 ---
 
-📂 Model Files Structure
+# 📂 Model Files Structure
 
 Under ComfyUI/models/SongGeneration/ there should be:
 
@@ -83,7 +83,7 @@ All model files must follow the exact structure.
 
 ---
 
-🧪 Examples & Citation
+# 🧪 Examples & Citation
 
 Example workflow available in example_workflows/
 
