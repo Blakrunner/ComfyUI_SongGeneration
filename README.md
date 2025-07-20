@@ -58,7 +58,7 @@ If any requirements fail, check requirements_origin.txt for exact module details
 # 📂 Model Files Structure
 
 Under ComfyUI/models/SongGeneration/ there should be:
-
+```
 --  ComfyUI/models/SongGeneration/
     |-- htdemucs.pth                    # 150 MB
     |-- ckpt/                           # Entire folder is approximately 24.4 GB
@@ -74,7 +74,7 @@ Under ComfyUI/models/SongGeneration/ there should be:
             |-- all model files
         |-- vae/
             |-- all model files
-
+```
 
 
 
